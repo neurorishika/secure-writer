@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Writer</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Quill.js Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.bubble.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-4">
+        <div id="homepage">
+            <h1 class="display-4 text-muted text-center">Secure Writer</h1>
+            <p class="lead text-center">Manage your files securely.</p>
+
+            <div class="recent-files my-4">
+                <h3>Recent Files</h3>
+                <ul id="recentFiles" class="list-unstyled"></ul>
+            </div>
+
+            <div class="text-center">
+                <button id="newFileButton" class="btn btn-primary">Create New File</button>
+                <button id="openFileButton" class="btn btn-secondary">Open Existing File</button>
+            </div>
+        </div>
+
+        <div id="editorPage" class="d-none">
+            <header class="text-center mb-4">
+                <h1 class="display-4 text-muted">Editing File</h1>
+                <button id="homeButton" class="btn btn-link">Go to Homepage</button>
+            </header>
+            <div class="editor-container">
+                <div id="editor"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+    <script src="../js/editor.js"></script>
+</body>
+</html>

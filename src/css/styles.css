@@ -1,0 +1,67 @@
+/* General Body Styling */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #fefafe; /* Soft pastel background */
+  color: #333; /* High contrast text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Editor Container */
+.editor-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0;
+  background: transparent; /* No background for seamless look */
+}
+
+/* Writing Area (Quill Editor) */
+#editor {
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333; /* Text color */
+  background: transparent; /* Transparent to blend with the page */
+  outline: none; /* Remove focus outline */
+  border: none; /* Remove the border */
+  box-shadow: none; /* Ensure no shadow is applied */
+}
+
+
+
+/* Controls Styling */
+.controls {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.controls button {
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #bee3db; /* Pastel green */
+  color: #333;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #dff7f0; /* Lighter hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .editor-container {
+      margin: 1rem;
+  }
+
+  #editor {
+      font-size: 1rem;
+  }
+
+  .controls button {
+      width: 100%;
+      margin-bottom: 0.5rem;
+  }
+}
